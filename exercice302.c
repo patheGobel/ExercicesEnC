@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define max 100
 
 int moyenne(int *arr, int taille);
@@ -25,9 +26,9 @@ int main()
     case 1:
         printf("La moyenne est:%d", moyenne(&T[0], taille));
         break;
-    //default:
-      //  printf("La moyenne est:%d", variance(&T[0], taille));
-       // break;
+        // default:
+        //   printf("La moyenne est:%d", variance(&T[0], taille));
+        //  break;
     }
 
     return 0;
@@ -35,10 +36,9 @@ int main()
 
 void affiche(int *arr, int taille)
 {
-
     for (int i = 0; i < taille; i++)
     {
-        printf("arr[%d]=\n", arr[i]);
+        printf("arr[%d]=%d\n", i, arr[i]);
     }
 }
 
@@ -59,5 +59,5 @@ int moyenne(int *arr, int taille)
     {
         sum = sum + arr[i];
     }
-    return sum; 
+    return sum;
 }*/
